@@ -15,19 +15,19 @@ import javax.swing.JOptionPane;
 public class Conexion {
     
     static Connection Conectar;
-//    static final String Driver = "com.mysql.cj.jdbc.Driver";
-//    static final String Host = "bpwxf4e69x5fyugcydw6-mysql.services.clever-cloud.com";
-//    static final String Port = "3306";
-//    static final String User = "uaokk8xarf8izd6x";
-//    static final String Password = "m9xjWB2LjW7A6V9vlat2";
-//    static final String Namebd = "bpwxf4e69x5fyugcydw6";
-    
     static final String Driver = "com.mysql.cj.jdbc.Driver";
-    static final String Host = "localhost";
+    static final String Host = "bqqiyotrhtielbv1lkhn-mysql.services.clever-cloud.com";
     static final String Port = "3306";
-    static final String User = "root";
-    static final String Password = "javier20";
-    static final String Namebd = "appbff";
+    static final String User = "uegzxtwqvyhihwb8";
+    static final String Password = "5AVIM76bgHZdLzTQwg09";
+    static final String Namebd = "bqqiyotrhtielbv1lkhn";
+    
+//    static final String Driver = "com.mysql.cj.jdbc.Driver";
+//    static final String Host = "localhost";
+//    static final String Port = "3306";
+//    static final String User = "root";
+//    static final String Password = "javier20";
+//    static final String Namebd = "appbff";
     
     static final String url = "jdbc:mysql://"+Host+":"+Port+"/"+Namebd;
     
@@ -36,7 +36,6 @@ public class Conexion {
         try{
             Class.forName(Driver);
             Conectar= DriverManager.getConnection(url,User,Password);
-            JOptionPane.showMessageDialog(null, "Conexion correcta");
         }catch (Exception e){
             
             JOptionPane.showMessageDialog(null,"No se pudo conectar a la base de datos"+e.toString());
